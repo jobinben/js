@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>三角形</title>
+</head>
+
+<body>
+<center>
+<script>
+		var num=parseInt(prompt("请输入三角形的行数",""));//获取prompt存储的数转换成整数放在变量num里面
+		if(num>5){
+		for(var i=0;i<num;i++)
+		{
+		
+	for(var j=i;j<num;j++)//当j=i时，循环变成倒着循环，当j等于5时循环结束
+			{
+		document.write(" * ");
+		
+			}
+	document.write(" <br> ");
+
+		}
+		alert("这是一个倒三角形");
+			}
+			else if(num<=5)	{
+					for(var x=0;x<num;x++){
+					
+						for(var y=0;y<=x;y++){
+						
+							document.write(" * ");
+							
+							}
+																				
+						document.write("<br>");
+					}
+					alert("这是一个正三角形");
+			}
+			else{
+				alert("请输入正确的数字");
+			}
+
+</script>
+</center>
+</body>
+</html>
